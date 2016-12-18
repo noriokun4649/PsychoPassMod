@@ -1,0 +1,138 @@
+{
+  "error":{
+    "category":"master",
+    "sounds":["error"]
+  },
+  "pulsegun":{
+    "category":"master",
+    "sounds":["pulsegun"]
+  },
+  "pulsegun1":{
+    "category":"master",
+    "sounds":["pulsegun1"]
+  },
+  "pulsegun140":{
+    "category":"master",
+    "sounds":["pulsegun140"]
+  },
+  "pulsegun2":{
+    "category":"master",
+    "sounds":["pulsegun2"]
+  },
+  "check":{
+    "category":"master",
+    "sounds":["check"]
+  },
+  "check1":{
+    "category":"master",
+    "sounds":["check1"]
+  },
+  "check2":{
+    "category":"master",
+    "sounds":["check2"]
+  },
+  "check3":{
+    "category":"master",
+    "sounds":["check3"]
+  },
+  "check4":{
+    "category":"master",
+    "sounds":["check4"]
+  },
+  "check5":{
+    "category":"master",
+    "sounds":["check5"]
+  },
+  "boot":{
+    "category":"master",
+    "sounds":["boot"]
+  },
+  "injustice":{
+    "category":"master",
+    "sounds":["injustice"]
+  },
+  "special": {
+    "category": "master",
+    "sounds": [ "special" ]
+  },
+  "mobileterminal": {
+    "category": "master",
+    "sounds": [ "mobileterminal" ]
+  },
+  "mobileterminal1": {
+    "category": "master",
+    "sounds": [ "mobileterminal1" ]
+  },
+  "mobileterminal2": {
+    "category": "master",
+    "sounds": [ "mobileterminal2" ]
+  },
+  "mobileterminal3": {
+    "category": "master",
+    "sounds": [ "mobileterminal3" ]
+  },
+  "mobileterminal4": {
+    "category": "master",
+    "sounds": [ "mobileterminal4" ]
+  },
+  "mobileterminal5": {
+    "category": "master",
+    "sounds": [ "mobileterminal5" ]
+  },
+  "mobileterminal6": {
+    "category": "master",
+    "sounds": [ "mobileterminal6" ]
+  },
+  "mobileterminal7": {
+    "category": "master",
+    "sounds": [ "mobileterminal7" ]
+  },
+  "mobileterminal8": {
+    "category": "master",
+    "sounds": [ "mobileterminal8" ]
+  },
+  "mobileterminal9": {
+    "category": "master",
+    "sounds": [ "mobileterminal9" ]
+  },
+  "mobileterminal10": {
+    "category": "master",
+    "sounds": [ "mobileterminal10" ]
+  },
+  "mobileterminal11": {
+    "category": "master",
+    "sounds": [ "mobileterminal11" ]
+  },
+  "mobileterminal12": {
+    "category": "master",
+    "sounds": [ "mobileterminal12" ]
+  },
+  "mobileterminal13": {
+    "category": "master",
+    "sounds": [ "mobileterminal13" ]
+  },
+  "systemonline": {
+    "category": "master",
+    "sounds": [ "systemonline" ]
+  },
+  "lock": {
+    "category": "master",
+    "sounds": [ "lock" ]
+  },
+    "truncheon_normal_sound": {
+    "category": "master",
+    "sounds": [ "truncheon_normal" ]
+  },
+    "truncheon_shrink_sound": {
+    "category": "master",
+    "sounds": [ "truncheon_shrink" ]
+  },
+    "truncheon_attack": {
+    "category": "master",
+    "sounds": [ "truncheon_attack" ]
+  },
+    "truncheon": {
+    "category": "master",
+    "sounds": [ "truncheon" ]
+  }
+}
