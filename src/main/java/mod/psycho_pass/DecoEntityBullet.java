@@ -226,7 +226,20 @@ public class DecoEntityBullet extends Entity implements IProjectile, IThrowableE
 		if (this.inGround) {
 			int j = this.worldObj.getBlockMetadata(this.xTile, this.yTile, this.zTile);
 			int k = this.worldObj.getBlockMetadata(this.xTile, this.yTile, this.zTile);
-
+			//ブロックに当たった場合の爆発
+			if (explosion){
+				explosion = false;
+				double x = this.xTile;
+				double y = this.yTile;
+				double z = this.zTile;
+				Entity hit = this;
+				Explosion ex = new Explosion(worldObj, hit, x, y, z, size);
+				ex.isSmoking = smoke;
+				ex.isFlaming = particle;
+				ex.doExplosionA();
+				ex.doExplosionB(particle);
+			}
+			//ここまで
 			if (j == this.inTile && k == this.inData) {
 				++this.ticksInGround;
 
@@ -267,20 +280,7 @@ public class DecoEntityBullet extends Entity implements IProjectile, IThrowableE
 				Entity entity1 = (Entity) list.get(i1);
 
 				if (entity1.canBeCollidedWith() && (entity1 != this.shootingEntity || this.ticksInAir >= 5)) {
-					//ブロックに当たった場合の爆発
-					if (explosion){
-						explosion = false;
-						double x = this.xTile;
-						double y = this.yTile;
-						double z = this.zTile;
-						Entity hit = this;
-						Explosion ex = new Explosion(worldObj, hit, x, y, z, size);
-						ex.isSmoking = smoke;
-						ex.isFlaming = particle;
-						ex.doExplosionA();
-						ex.doExplosionB(particle);
-					}
-					//ここまで
+
 					f1 = 0.3F;
 					AxisAlignedBB axisalignedbb1 = entity1.boundingBox.expand((double) f1, (double) f1, (double) f1);
 					MovingObjectPosition movingobjectposition1 = axisalignedbb1.calculateIntercept(vec31, vec3);

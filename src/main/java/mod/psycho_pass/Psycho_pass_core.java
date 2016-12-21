@@ -1,6 +1,7 @@
 package mod.psycho_pass;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -55,7 +56,7 @@ public class Psycho_pass_core {
 	public static final String modid = "PSYCHO_PASS";
 	public static final String name = "PSYCHO_PASS";
 	public static final String version = "2.0.6β";
-
+	public static Configuration config = new Configuration(new File("config/PSYCHO_PASS/PSYCHO_PASS.cfg"));
 	public static boolean modeinfo;
 	public static double seting;
 	public static float seting2;
@@ -143,8 +144,10 @@ public class Psycho_pass_core {
 		ItemArmor.ArmorMaterial MobileTerminalMaterial = EnumHelper.addArmorMaterial("MobileTerminal", 0, new int[]{0,0,0,0}, 0);
 		truncheon_tool = EnumHelper.addToolMaterial("truncheon_tool",0, 64,0, -4F,30).setRepairItem(new ItemStack(Blocks.obsidian,2));
 		PacketHandler.init();
-		Configuration config = new Configuration(new File("config/PSYCHO_PASS.cfg"));
 		config.load();
+		config.addCustomCategoryComment("MultiPlay","マルチプレイでの設定です");
+		config.addCustomCategoryComment("Developer" , "開発者向けの設定です");
+		config.addCustomCategoryComment(Configuration.CATEGORY_GENERAL , "基本的な設定です");
 		seting = config.get(Configuration.CATEGORY_GENERAL, "Seting interval", 60, "ドミネーターのインターバルを設定").getDouble();
 		seting2 = config.get(Configuration.CATEGORY_GENERAL, "Seting Launch sound", 1.0F, "ドミネーターの発射音の音量を設定").getMaxListLength();
 		usercheck = config.get("MultiPlay", "User Check",true , "ドミネーターの所有者を初期起動時に登録するかどうか").getBoolean();

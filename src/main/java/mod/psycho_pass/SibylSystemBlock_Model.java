@@ -47,6 +47,7 @@ public class SibylSystemBlock_Model implements ISimpleBlockRenderingHandler
 			renderer.clearOverrideBlockTexture();
 			block.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
 			renderer.setRenderBoundsFromBlock(block);
+			renderer.renderAllFaces = true;
 			return true;
 		}
 		return false;
